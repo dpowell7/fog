@@ -77,7 +77,7 @@ module Fog
           @digitalocean_api_key   = options[:digitalocean_api_key]
           @digitalocean_client_id = options[:digitalocean_client_id]
           @digitalocean_api_url   = options[:digitalocean_api_url] || \
-                                            "https://api.digitalocean.com"
+                                            "https://api.digitalocean.com/v1"
           @connection             = Fog::Connection.new(@digitalocean_api_url)
         end
 
